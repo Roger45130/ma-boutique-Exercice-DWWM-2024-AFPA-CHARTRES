@@ -203,16 +203,16 @@ body {
 
 .quantite__wrapper {
     display: flex;
-    align-items: center; /* Aligne verticalement au centre */
-    gap: 10px; /* Ajoute un espacement entre le texte et le select */
+    align-items: center;
+    gap: 10px;
   }
   
   .quantite__article {
-    margin: 0; /* Supprime les marges par défaut */
+    margin: 0; 
   }
   
   #quantite__select {
-    padding: 5px; /* Optionnel : améliore l'apparence du select */
+    padding: 5px;
   }
 
 .btnAjoutPanier {
@@ -222,4 +222,39 @@ body {
     border-radius: 5px;
     color: #FFF;
     cursor: pointer;
+}
+
+/* *** PAGE PANIER *** */
+
+.container__panier {
+    height: auto;
+}
+
+.DetailPanier {
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tableauDetailPanier {
+    display: grid;
+    grid-template-columns: 35% 20% 15% 15% 15%;
+    gap: 0.5rem;
+    margin: 2rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.DetailPanier__content {
+    width: 90%;
+    border: 1px solid #000000;
+}
+
+.image {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
 }
