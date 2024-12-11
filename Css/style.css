@@ -1,0 +1,225 @@
+@import url("reset.css");
+
+html,
+body {
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #99a4c7;
+}
+
+.container {
+    width: 85%;
+    height: 1570px;
+    margin: 0 auto;
+    margin-top: 3rem;
+    border-radius: 15px;
+    background-color: #FFF;
+    box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.48);
+}
+
+.header__logo {
+    margin: 2rem;
+}
+
+.header__title {
+    font-family: "Inspiration", cursive;
+    font-size: 4rem;
+    font-weight: bold;
+    padding: 2rem;
+}
+
+.nav {
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    transition: all 0.5s;
+}
+
+.nav__list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.nav__item {
+    padding: 1rem 2rem;
+}
+
+.nav__link {
+    color: #000000;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav__link:hover {
+    color: rgba(199, 47, 47, 0.863);
+}
+
+.presentation {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    padding: 1rem;
+    gap: 2rem;
+}
+
+.title__h2 {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.article__content {
+    margin-top: 1rem;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    align-items: stretch;
+    justify-items: stretch;
+}
+
+.card {
+    height: 500px;
+    position: relative;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+
+.article__picture {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.card__legend {
+    position: absolute;
+    background-color: #99a4c7;
+    padding: 0.5rem 0;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    color: #000000;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-weight: bold;
+}
+
+.btnVoirPlus {
+    padding: 10px;
+    background-color: #000000;
+    border-radius: 5px;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.btnVoirPlus:hover,
+.btnAjoutPanier:hover {
+    background-color: #666666;
+}
+
+.footer {
+    padding: 3rem 0;
+}
+
+.copyright {
+    color: #000000;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 0.5rem;
+}
+
+/* *** PAGE PRODUIT *** */
+
+.container__panier {
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 3rem;
+    border-radius: 15px;
+    background-color: #FFF;
+    box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.48);
+}
+
+.product__content {
+    margin-top: 1rem;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    gap: 2rem;
+}
+
+.name {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.article__picture__content {
+    height: 500px;
+    position: relative;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+
+.Images__Article {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.article__description__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.subtitle__h3 {
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+.reference, .indicateurPrix {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.title__h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.description__article {
+    font-size: 1.4rem;
+    text-align: justify;
+}
+
+.quantite__wrapper {
+    display: flex;
+    align-items: center; /* Aligne verticalement au centre */
+    gap: 10px; /* Ajoute un espacement entre le texte et le select */
+  }
+  
+  .quantite__article {
+    margin: 0; /* Supprime les marges par défaut */
+  }
+  
+  #quantite__select {
+    padding: 5px; /* Optionnel : améliore l'apparence du select */
+  }
+
+.btnAjoutPanier {
+    width: 300px;
+    padding: 10px;
+    background-color: #000000;
+    border-radius: 5px;
+    color: #FFF;
+    cursor: pointer;
+}

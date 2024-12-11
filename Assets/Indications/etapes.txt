@@ -1,0 +1,14 @@
+TP Boutique 
+
+Le but de ce TP est de créer une boutique dynamique permettant d'afficher les produits dynamiquement dont les données proviennent du fichier 'data/data.json'
+
+Voici les étapes à suivre : 
+
+1. Création des dossiers/fichiers (identique aux Ateliers peintres)
+2. Mise en forme html css
+3. Découper les différentes partie du site (header, nav, main, footer) et les inclures dans les différents fichiers composants javascript 
+4. Création de l'API, créer une fonction dans le fichier api.js permettant de récupérer via la méthode fecth() l'ensemble des données stockées dans le fichier data.json
+5. Créer une fonction getProducts() qui retourne l'ensemble des produits
+6. Afficher dynamiquement les produits sur la page index.html en passant par le script javascript 
+
+Bon courage !! 

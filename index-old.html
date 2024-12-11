@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inspiration&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="Css/style.css" />
+    <title>Ma Boutique | Home</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="header__title">Ma boutique</h1>
+        </header>
+        
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="index.html" class="nav__link">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a href="panier.html" class="nav__link">Panier</a>
+                </li>
+            </ul>
+        </nav>
+        
+        <main class="main">
+            <section class="presentation">
+                <h2 class="title__h2">Nos produits</h2>
+
+                <div class="article__content">
+                    <figure class="card">
+                        <img src="./Assets/Images/Products/chapeau.jpg" alt="Chapeau noir pork pie Heisenberg" class="article__picture">
+                        <figcaption class="card__legend">
+                            Chapeau 34.99 €<br><br>
+                            <button class="btnVoirPlus" data-id="243" onclick="window.location.href='product.html'">Voir plus</button>
+                        </figcaption>
+                    </figure>
+                    <figure class="card">
+                        <img src="./Assets/Images/Products/pull.jpg" alt="Pull jaune poussin très moche" class="article__picture">
+                        <figcaption class="card__legend">
+                            Pull 19.99 €<br><br>
+                            <button class="btnVoirPlus" data-id="124">Voir plus</button>
+                        </figcaption>
+                    </figure>
+                    <figure class="card">
+                        <img src="./Assets/Images/Products/chaussure.jpg" alt="Chaussures en forme de pied flippantes" class="article__picture">
+                        <figcaption class="card__legend">
+                            Chaussures 54.99 €<br><br>
+                            <button class="btnVoirPlus" data-id="789">Voir plus</button>
+                        </figcaption>
+                    </figure>
+                    <figure class="card">
+                        <img src="./Assets/Images/Products/chaussette.jpg" alt="Chaussettes vert avocat bizarres" class="article__picture">
+                        <figcaption class="card__legend">
+                            Chaussettes 9.99 €<br><br>
+                            <button class="btnVoirPlus" data-id="568">Voir plus</button>
+                        </figcaption>
+                    </figure>
+                    <figure class="card">
+                        <img src="./Assets/Images/Products/robe.jpg" alt="Robe costume vraiment ridicule" class="article__picture">
+                        <figcaption class="card__legend">
+                            Robe 48.00 €<br><br>
+                            <button class="btnVoirPlus" data-id="258">Voir plus</button>
+                        </figcaption>
+                    </figure>
+                    <figure class="card">
+                        <img src="./Assets/Images/Products/tee-shirt.jpg" alt="Tee-shirt qui demande de l'oseille" class="article__picture">
+                        <figcaption class="card__legend">
+                            Tee-shirt 15.99 €<br><br>
+                            <button class="btnVoirPlus" data-id="369">Voir plus</button>
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p class="copyright">&copy; 2024 - Roger-Pierre LE GRASSE</p>
+        </footer>
+    </div>
+    
+    <script src="Scripts/pages/index.js" type="module"></script>
+</body>
+</html>
