@@ -1,7 +1,7 @@
 export const Main = (datas) => {
     const displayArticles = () => {
         if (!datas || !datas.products) {
-            console.log("Les données des articles sont manquantes ou incorrectes.");
+            console.error("Les données des articles sont manquantes ou incorrectes.");
             return '';
         }
 

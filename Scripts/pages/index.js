@@ -5,7 +5,7 @@ import { Main } from "../components/Main.js";
 import { Footer } from "../components/Footer.js";
 
 const displayData = (datas) => {
-    const body = document.querySelector('body');
+    const body = document.querySelector("body");
 
     if (!datas) {
         console.error("Les données principales sont manquantes.");
@@ -22,11 +22,10 @@ const displayData = (datas) => {
         </div>
     `;
 
-    // Ajout d'un événement pour les boutons "Voir plus"
-    const buttons = document.querySelectorAll('.btnVoirPlus');
-    buttons.forEach(button => {
-        button.addEventListener('click', (event) => {
-            const productId = event.target.getAttribute('data-id');
+    const buttons = document.querySelectorAll(".btnVoirPlus");
+    buttons.forEach((button) => {
+        button.addEventListener("click", (event) => {
+            const productId = event.target.getAttribute("data-id");
             window.location.href = `product.html?id=${productId}`;
         });
     });
@@ -38,6 +37,6 @@ const displayData = (datas) => {
         displayData(datas);
     } catch (error) {
         console.error("Erreur lors de la récupération des données :", error);
-        document.querySelector('body').innerHTML = `<p>Erreur : Impossible de charger les données.</p>`;
+        document.querySelector("body").innerHTML = `<p>Erreur : Impossible de charger les données.</p>`;
     }
 })();

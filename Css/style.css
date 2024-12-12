@@ -293,6 +293,10 @@ body {
     padding-bottom: 20px;
 }
 
+.btnPlusMoins {
+    border: none;
+}
+
 .icon__plus, .icon__moins {
     border: 1px solid #000000;
     border-radius: 50%;

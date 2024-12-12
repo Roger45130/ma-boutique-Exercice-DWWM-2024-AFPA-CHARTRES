@@ -11,7 +11,7 @@
     />
 
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap"
       rel="stylesheet"
     />
 
@@ -28,7 +28,7 @@
   </head>
   <body>
     <div class="container__panier">
-      <header class="header__logo">
+      <header class="header">
         <h1 class="header__title">Ma boutique</h1>
       </header>
 
@@ -61,9 +61,9 @@
           <div class="DetailPanier__content">
             <h3 class="etiquette__panier">Quantité(s)</h3>
             <div class="quantite">
-              <h4 class="title__h4"><i class="fa-solid fa-minus icon__moins"></i></h4>
+              <button class="btnPlusMoins"><h4 class="title__h4"><i class="fa-solid fa-minus icon__moins"></i></h4></button>
               <h3 class="subtitle__h3">0</h3>
-              <h4 class="title__h4"><i class="fa-solid fa-plus icon__plus"></i></h4>
+              <button class="btnPlusMoins"><h4 class="title__h4"><i class="fa-solid fa-plus icon__plus"></i></h4></button>
             </div>
           </div>
           <div class="DetailPanier__content">
@@ -77,17 +77,17 @@
         </div>
         <div class="annuleValide">
           <button
-                class="btnAnnuler"
-                onclick="window.location.href='index.html'"
-              >
-                Annuler le panier
-              </button>
-              <button
-                class="btnValider"
-                onclick="window.location.href='panier.html'"
-              >
-                Valider le panier
-              </button>
+            class="btnAnnuler"
+            id="btnAnnuler"
+          >
+            Annuler le panier
+          </button>
+          <button
+            class="btnValider"
+            id="btnValider"
+          >
+            Valider le panier
+          </button>
         </div>
       </main>
 
