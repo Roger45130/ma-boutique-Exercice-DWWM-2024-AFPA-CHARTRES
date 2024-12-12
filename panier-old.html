@@ -47,6 +47,7 @@
         <h2 class="title__h2 DetailPanier">Détail de votre Panier</h2>
         <div class="tableauDetailPanier">
           <div class="DetailPanier__content">
+            <h3 class="etiquette__panier">Visuel</h3>
             <img src="" alt="" class="Images__Article image" />
           </div>
           <div class="DetailPanier__content">
@@ -59,7 +60,11 @@
           </div>
           <div class="DetailPanier__content">
             <h3 class="etiquette__panier">Quantité(s)</h3>
-            <h3 class="subtitle__h3 quantite"></h3>
+            <div class="quantite">
+              <h4 class="title__h4"><i class="fa-solid fa-minus icon__moins"></i></h4>
+              <h3 class="subtitle__h3">0</h3>
+              <h4 class="title__h4"><i class="fa-solid fa-plus icon__plus"></i></h4>
+            </div>
           </div>
           <div class="DetailPanier__content">
             <h3 class="etiquette__panier">Total</h3>
@@ -69,6 +74,20 @@
         <div class="TotalAPayer">
           <h3 class="subtitle__h3 titreTotal">TOTAL A PAYER</h3>
           <h3 class="subtitle__h3 montantTotal"></h3>
+        </div>
+        <div class="annuleValide">
+          <button
+                class="btnAnnuler"
+                onclick="window.location.href='index.html'"
+              >
+                Annuler le panier
+              </button>
+              <button
+                class="btnValider"
+                onclick="window.location.href='panier.html'"
+              >
+                Valider le panier
+              </button>
         </div>
       </main>
 

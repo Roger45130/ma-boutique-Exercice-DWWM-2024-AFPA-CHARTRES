@@ -172,8 +172,8 @@ body {
 }
 
 .Images__Article {
-    width: 100%;
-    height: 100%;
+    width: 95%;
+    height: 95%;
     border-radius: 5px;
 }
 
@@ -204,20 +204,6 @@ body {
     text-align: justify;
 }
 
-.quantite__wrapper {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  
-  .quantite__article {
-    margin: 0; 
-  }
-  
-  #quantite__select {
-    padding: 5px;
-  }
-
 .btnAjoutPanier {
     width: 300px;
     padding: 10px;
@@ -231,6 +217,7 @@ body {
 
 .container__panier {
     height: auto;
+    margin-bottom: 3rem;
 }
 
 .DetailPanier {
@@ -238,6 +225,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 2rem;
 }
 
 .tableauDetailPanier {
@@ -251,9 +239,22 @@ body {
 
 .DetailPanier__content {
     width: 90%;
-    border: 1px solid #000000;
+    height: 100px;
+    border: 2px solid #000000;
     padding-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.etiquette__panier {
     padding-top: 5px;
+    padding-bottom: 15px;
 }
 
 .image {
@@ -262,6 +263,17 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.quantite {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
 }
 
 .TotalAPayer {
@@ -274,7 +286,48 @@ body {
 }
 
 .titreTotal, .montantTotal {
-    border: 1px solid #000000;
+    border: 2px solid #000000;
+    border-radius: 15px;
+    padding-top: 20px;
     padding-left: 20px;
-    padding-top: 5px;
+    padding-bottom: 20px;
+}
+
+.icon__plus, .icon__moins {
+    border: 1px solid #000000;
+    border-radius: 50%;
+    padding: 5px;
+    color: #FFF;
+    background-color: #000000;
+}
+
+.annuleValide {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    gap: 20px;
+}
+
+.btnAnnuler {
+    padding: 10px;
+    background-color: #c73434;
+    border-radius: 5px;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.btnAnnuler:hover {
+    background-color: #fa1111;
+}
+
+.btnValider {
+    padding: 10px;
+    background-color: #3cad4f;
+    border-radius: 5px;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.btnValider:hover {
+    background-color: #0ba525;
 }

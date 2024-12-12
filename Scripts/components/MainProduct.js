@@ -32,19 +32,6 @@ export const MainProduct = (datas) => {
                             <h4 class="title__h4 price">${product.price}</h4>
                         </div>
                         <span class="description">${product.description}</span>
-                        <div class="quantite__wrapper">
-                            <p class="quantite__article">Qtés :</p>
-                            <select name="Quantite" id="quantite__select">
-                            <option value="" class="quantite">---- Quantités ----</option>
-                            <option value="1" class="quantite">1</option>
-                            <option value="2" class="quantite">2</option>
-                            <option value="3" class="quantite">3</option>
-                            <option value="4" class="quantite">4</option>
-                            <option value="plus" class="quantite">
-                                Plus ? Vous être STUPIDE !
-                            </option>
-                            </select>
-                        </div>
                         <button class="btnAjoutPanier" onclick="window.location.href='panier.html'">Ajouter au panier</button>
                     </div>
                 </div>
