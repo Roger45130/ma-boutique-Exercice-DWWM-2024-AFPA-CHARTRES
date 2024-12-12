@@ -41,7 +41,7 @@ export const MainProduct = (datas) => {
                             <option value="3" class="quantite">3</option>
                             <option value="4" class="quantite">4</option>
                             <option value="plus" class="quantite">
-                                Plus ? Vous devez être STUPIDE !
+                                Plus ? Vous être STUPIDE !
                             </option>
                             </select>
                         </div>
