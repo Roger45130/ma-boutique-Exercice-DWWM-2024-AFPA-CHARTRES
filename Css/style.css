@@ -252,12 +252,29 @@ body {
 .DetailPanier__content {
     width: 90%;
     border: 1px solid #000000;
+    padding-left: 20px;
+    padding-top: 5px;
 }
 
 .image {
-    width: 80%;
+    width: 95%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+}
+
+.TotalAPayer {
+    display: grid;
+    grid-template-columns: 86.6% 15%;
+    gap: 0.5rem;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+.titreTotal, .montantTotal {
+    border: 1px solid #000000;
+    padding-left: 20px;
+    padding-top: 5px;
 }
