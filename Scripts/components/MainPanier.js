@@ -101,17 +101,17 @@ const updatePanier = (productId, quantityChange) => {
 
 // Gestion de l'annulation du panier
 document.addEventListener("DOMContentLoaded", () => {
-    document.getElementById("btnAnnuler").addEventListener("click", () => {
+    document.getElementsByClassName("btnAnnuler").addEventListener("click", () => {
         if (confirm("Êtes-vous sûr de vouloir vider le panier ?")) {
             localStorage.removeItem("panier");
-            document.getElementById("tableauDetailPanier").innerHTML = "";
-            document.getElementById("montantTotal").textContent = "0.00 €";
+            document.getElementsByClassName("tableauDetailPanier").innerHTML = "";
+            document.getElementsByClassName("montantTotal").textContent = "0.00 €";
             alert("Votre panier a été vidé.");
         }
     });
 
     // Gestion de la validation du panier
-    document.getElementById("btnValider").addEventListener("click", () => {
+    document.getElementsByClassName("btnValider").addEventListener("click", () => {
         alert("Votre commande a été validée !");
         localStorage.removeItem("panier");
         location.href = "index.html";

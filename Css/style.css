@@ -188,8 +188,7 @@ body {
     font-weight: bold;
 }
 
-.reference,
-.indicateurPrix {
+.reference, .indicateurPrix {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -214,11 +213,12 @@ body {
     cursor: pointer;
 }
 
-.padding-top {
-    padding-top: 15px;
-}
-
 /* *** PAGE PANIER *** */
+
+.container__panier {
+    height: auto;
+    margin-bottom: 3rem;
+}
 
 .DetailPanier {
     font-size: 2.5rem;
@@ -232,18 +232,48 @@ body {
     display: grid;
     grid-template-columns: 35% 20% 15% 15% 15%;
     gap: 0.5rem;
-    margin: 2rem auto;
+    margin: 2rem;
     width: 90%;
+    margin: 0 auto;
 }
 
 .DetailPanier__content {
     width: 90%;
+    height: 100px;
     border: 2px solid #000000;
-    padding: 15px 20px;
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
     align-items: center;
     border-radius: 15px;
+}
+
+.etiquette__panier {
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+
+.image {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.quantite {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
 }
 
 .TotalAPayer {
@@ -251,30 +281,25 @@ body {
     grid-template-columns: 86.6% 15%;
     gap: 0.5rem;
     width: 90%;
-    margin: 2rem auto;
+    margin: 0 auto;
+    margin-top: 2rem;
 }
 
-.titreTotal,
-.montantTotal {
+.titreTotal, .montantTotal {
     border: 2px solid #000000;
     border-radius: 15px;
-    padding: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
 }
 
-.icon__plus,
-.icon__moins {
+.icon__plus, .icon__moins {
     border: 1px solid #000000;
     border-radius: 50%;
     padding: 5px;
     color: #FFF;
     background-color: #000000;
     font-size: 1rem;
-    cursor: pointer;
-}
-
-.icon__plus:hover,
-.icon__moins:hover {
-    background-color: #666666;
 }
 
 .annuleValide {
